@@ -1,0 +1,36 @@
+Try  it
+<html>
+    <body>
+        <button onclick="startCount()">Count</button>
+        <button onclick="stop()">Stop</button>
+        <div id="count">1</div>
+        <script>
+            const countElem = document.getElementById('count');
+            let count = 0;
+            let interval;
+
+            function stop() {
+                clearInterval(interval);
+            }
+
+            function startCount() {
+                interval = setInterval(() => {
+                    setCount();
+                }, 500);
+            }
+
+            function setCount() {
+                count++;
+                console.log(count);
+                countElem.innerText = count;
+                countElem.style.fontSize = count + 'px';
+
+                if (count%2==0) {
+                    countElem.style.backgroundColor = "green";
+                } else {
+                    countElem.style.backgroundColor = "red";
+                }
+            }
+        </script>
+    </body>
+</html>
