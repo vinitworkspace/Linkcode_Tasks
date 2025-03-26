@@ -1,0 +1,14 @@
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": {
+  "express": "^4.21.2"
+  }
+}
+

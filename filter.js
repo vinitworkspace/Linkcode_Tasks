@@ -14,4 +14,4 @@ const oddnum=num.filter((n)=>{
         return true;
 });
 console.log("Odd numbers are :");
-console.log(oddnum);
+console.log(oddnum);  
